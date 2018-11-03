@@ -17,7 +17,7 @@ metadata:
 spec:
   containers:
   - name: vol-container-ex
-    image: ubuntu
+    image: gitlab.nautilus.optiputer.net/prp/jupyterlab
     #args: ["sleep", "36500000"]
     volumeMounts:
     - mountPath: /examplevol-ex
