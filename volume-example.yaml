@@ -33,7 +33,7 @@ spec:
         #nvidia.com/gpu: 1
         memory: "32Gi"
     #command: ["stress"]
-    args: ["sleep", "36500000"]
+    args: ["python", "algoTrial.py"]
   restartPolicy: Never
   volumes:
     - name: examplevol-ex
