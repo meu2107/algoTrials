@@ -33,9 +33,12 @@ spec:
         #nvidia.com/gpu: 1
         memory: "32Gi"
     #command: ["stress"]
-    args: ["python", "/home/jovyan/testCases/algoTrial.py"]
+    #args: ["python", "/home/jovyan/testCases/algoTrial.py"]
+    args: ["sleep", "36500000"]
   restartPolicy: Never
   volumes:
     - name: examplevol-ex
       persistentVolumeClaim:
         claimName: examplevol-ex
+      securityContext:
+        fsGroup: 100
