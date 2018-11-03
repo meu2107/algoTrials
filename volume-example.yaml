@@ -33,7 +33,7 @@ spec:
         #nvidia.com/gpu: 1
         memory: "32Gi"
     #command: ["stress"]
-    args: ["python", "algoTrial.py"]
+    args: ["python", "/home/jovyan/testCases/algoTrial.py"]
   restartPolicy: Never
   volumes:
     - name: examplevol-ex
