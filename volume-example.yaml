@@ -33,7 +33,7 @@ spec:
         #nvidia.com/gpu: 1
         memory: "32Gi"
     #command: ["stress"]
-    args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]
+    args: ["sleep", "36500000"]
   restartPolicy: Never
   volumes:
     - name: examplevol-ex
