@@ -15,6 +15,8 @@ kind: Pod
 metadata:
   name: vol-pod-ex
 spec:
+  securityContext:
+    fsGroup: 100
   containers:
   - name: vol-container-ex
     image: gitlab-registry.nautilus.optiputer.net/prp/jupyterlab
@@ -40,5 +42,3 @@ spec:
     - name: examplevol-ex
       persistentVolumeClaim:
         claimName: examplevol-ex
-      securityContext:
-        fsGroup: 100
